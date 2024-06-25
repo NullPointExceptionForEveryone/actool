@@ -1,13 +1,17 @@
 [tool.poetry]
-name = "atool"
-version = "0.0.1"
+name = "actool"
+version = "0.0.2"
 description = ""
 authors = ["pfy <program_yun@163.com>"]
 readme = "README.md"
-packages = [{ include = "atool", from = "src" }]
+homepage = "https://github.com/NullPointExceptionForEveryone/actool"
+repository = "https://github.com/NullPointExceptionForEveryone/actool"
+license = "MIT"
+packages = [{ include = "actool", from = "src" }]
+keywords = ["actool"]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.7"
 requests = "^2.32.3"
 
 
@@ -22,4 +26,4 @@ build-backend = "poetry.core.masonry.api"
 include = ["pyproject.toml", "src/**/*.py", "tests/**/*.py"]
 
 [tool.poetry.scripts]
-atgetip = "atool.network.get_ip:get_ip"
+acgetip = "actool.network.get_ip:get_ip"

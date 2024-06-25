@@ -1,4 +1,4 @@
-# atool
+# actool
 
 一个命令行工具合集
 
@@ -19,11 +19,11 @@ poetry build
 安装
 
 ```
-pip install dist/atool-0.0.1-py3-none-any.whl
+pip install dist/actool-0.0.2-py3-none-any.whl
 ```
 
 卸载
 
 ```
-pip uninstall atool
+pip uninstall actool
 ```
