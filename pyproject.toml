@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "atool"
+version = "0.0.1"
+description = ""
+authors = ["pfy <program_yun@163.com>"]
+readme = "README.md"
+packages = [{ include = "atool", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.32.3"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.4.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+include = ["pyproject.toml", "src/**/*.py", "tests/**/*.py"]
+
+[tool.poetry.scripts]
+atgetip = "atool.network.get_ip:get_ip"
